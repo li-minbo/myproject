@@ -1,4 +1,9 @@
-# Started by AICoder, pid:1079180654m29ce149330a80d0cd4d0323b2d964 
-# 这是一个简单的 Hello, World! 程序
+ 
 print("Hello, World!")
-# Ended by AICoder, pid:1079180654m29ce149330a80d0cd4d0323b2d964 
+ 
+import torch
+print(torch.__version__) 
+print(torch.cuda.is_available())  # 应该返回 True
+print(torch.cuda.device_count())  # 应该返回 1（如果你只有一块 GPU）
+print(torch.cuda.get_device_name(0))  # 应该返回你的 GPU 名称
+ 
